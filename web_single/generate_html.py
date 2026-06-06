@@ -28,13 +28,13 @@ html_template = f'''<!DOCTYPE html>
         .filter-chip {{ padding: 8px 16px; border-radius: 20px; border: 1px solid #FFCC5C; background: #FFF3DC; white-space: nowrap; cursor: pointer; font-size: 14px; }}
         .filter-chip.active {{ background: #FFCC5C; }}
         .list-item {{ background: #FFEEAD; border: 1.5px solid #FFCC5C; border-radius: 12px; padding: 12px; margin-bottom: 12px; cursor: pointer; }}
-        .list-item-title {{ font-weight: 600; font-size: 16px; margin-bottom: 8px; }}
-        .list-item-subtitle {{ font-size: 14px; color: #6B4A2E; }}
+        .list-item-title {{ font-weight: 600; font-size: 16px; margin-bottom: 8px; line-height: 1.25; }}
+        .list-item-subtitle {{ font-size: 14px; color: #6B4A2E; line-height: 1.3; }}
         .detail-page {{ padding-bottom: 80px; }}
         .back-button {{ padding: 12px; cursor: pointer; color: #6B4A2E; }}
         .detail-title {{ font-size: 22px; font-weight: bold; margin-bottom: 12px; }}
         .detail-section {{ margin-bottom: 20px; }}
-        .detail-section-title {{ font-weight: 600; margin-bottom: 8px; }}
+        .detail-section-title {{ font-weight: 600; margin-bottom: 8px; font-size: 17px; height: 1.2; }}
         .detail-stat {{ display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #FFCC5C; }}
         .magic-canvas {{ background: #FFFCF6; border: 1.5px solid #FFCC5C; border-radius: 12px; margin: 16px 0; }}
         .loading {{ text-align: center; padding: 40px; color: #6B4A2E; }}
@@ -45,7 +45,7 @@ html_template = f'''<!DOCTYPE html>
         .list-item-with-icon {{ display: flex; align-items: center; gap: 12px; }}
         .list-item-icon {{ width: 56px; height: 56px; background: #FFCC5C; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }}
         .list-item-content {{ flex: 1; }}
-        .list-item-caption {{ font-size: 12px; color: #6B4A2E; margin-top: 4px; }}
+        .list-item-caption {{ font-size: 12px; color: #9A7A5C; margin-top: 4px; line-height: 1.3; }}
     </style>
 </head>
 <body>
