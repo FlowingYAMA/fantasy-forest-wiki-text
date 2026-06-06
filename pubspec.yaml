@@ -1,0 +1,32 @@
+name: fantasy_forest_wiki_text
+description: "空想森林攻略·纯文字版（无游戏图片资源，仅官方数据）"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/game/wiki_data.json
+    - assets/app_icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/app_icon.png"
+  adaptive_icon_background: "#FFEEAD"
+  adaptive_icon_foreground: "assets/app_icon.png"
+  adaptive_icon_foreground_scale: 0.7
