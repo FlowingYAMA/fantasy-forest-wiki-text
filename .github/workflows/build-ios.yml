@@ -24,12 +24,11 @@ jobs:
         
       - name: Create IPA
         run: |
-          cd build/ios/iphoneos
-          mkdir -p Payload
-          cp -R Runner.app Payload/
-          cd ../..
-          zip -r build/ios/app.zip build/ios/iphoneos/Payload
-          mv build/ios/app.zip build/ios/app.ipa
+          mkdir -p build/ios/iphoneos/Payload
+          cp -R build/ios/iphoneos/Runner.app build/ios/iphoneos/Payload/
+          cd build/ios
+          zip -r app.zip iphoneos/Payload
+          mv app.zip app.ipa
           
       - name: Upload IPA
         uses: actions/upload-artifact@v4
