@@ -27,9 +27,9 @@ jobs:
           cd build/ios/iphoneos
           mkdir -p Payload
           cp -R Runner.app Payload/
-          cd ..
-          zip -r app.zip Payload
-          mv app.zip app.ipa
+          cd ../..
+          zip -r build/ios/app.zip build/ios/iphoneos/Payload
+          mv build/ios/app.zip build/ios/app.ipa
           
       - name: Upload IPA
         uses: actions/upload-artifact@v4
